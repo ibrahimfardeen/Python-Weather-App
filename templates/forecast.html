@@ -1,0 +1,24 @@
+<!-- forecast.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast for {{ location }}</h1>
+        <div class="forecast-data">
+            {% for forecast in forecast_list %}
+                <p>Date: {{ forecast.dt_txt }}</p>
+                <p>Temperature: {{ forecast.main.temp }} K</p>
+                <p>Humidity: {{ forecast.main.humidity }} %</p>
+                <p>Wind Speed: {{ forecast.wind.speed }} m/s</p>
+                <p>Weather Condition: {{ forecast.weather[0].main }}</p>
+                <hr>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
