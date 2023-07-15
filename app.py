@@ -5,7 +5,7 @@ import requests
 import json
 
 app = Flask(__name__)
-app.secret_key = '_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 # Weather API configuration
 API_KEY = '542d4773728d9f704d07738211c002f5'
