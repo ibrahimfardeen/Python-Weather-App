@@ -3,10 +3,10 @@ import requests
 import json
 
 app = Flask(__name__)
-app.secret_key = '3a9eb2265870397351caa5b34faac36e487a7d77ca25e35ec3fae7d5bad80449'
+app.secret_key = 'YOUR_SECRET_KEY'
 
 # Weather API configuration
-API_KEY = '542d4773728d9f704d07738211c002f5'
+API_KEY = 'YOUR_API_KEY'
 
 # Helper function to fetch weather data
 def get_weather_data(location):
