@@ -1,5 +1,3 @@
-<!-- weather.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +13,9 @@
             <p>Wind Speed: {{ wind_speed }} m/s</p>
             <p>Weather Condition: {{ weather_condition }}</p>
         </div>
-        <a href="/forecast">View Forecast</a>
+        <form action="/" method="get">
+            <a href="/forecast">View Forecast</a>
+        </form>
     </div>
 </body>
 </html>
